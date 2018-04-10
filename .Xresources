@@ -1,0 +1,40 @@
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+URxvt.font: xft:dejavusansmono:size=16
+URxvt.scrollBar:False
+URxvt.letterSpace: -1
+! Base16 Ocean
+! Scheme: Chris Kempson (http://chriskempson.com)
+
+URxvt*background:                     #2b303b
+URxvt*foreground:                     #c0c5ce
+URxvt*cursorColor:                    #c0c5ce
+
+URxvt*scrollColor:                    #c0c5ce
+URxvt*highlightColor:                 #4f5b66
+URxvt*highlightTextColor:             #a7adba
+
+URxvt*color0:                         #2b303b
+URxvt*color1:                         #bf616a
+URxvt*color2:                         #a3be8c
+URxvt*color3:                         #ebcb8b
+URxvt*color4:                         #8fa1b3
+URxvt*color5:                         #b48ead
+URxvt*color6:                         #96b5b4
+URxvt*color7:                         #c0c5ce
+URxvt*color8:                         #65737e
+URxvt*color9:                         #bf616a
+URxvt*color10:                        #a3be8c
+URxvt*color11:                        #ebcb8b
+URxvt*color12:                        #8fa1b3
+URxvt*color13:                        #b48ead
+URxvt*color14:                        #96b5b4
+URxvt*color15:                        #eff1f5
+
+URxvt*color16:                        #d08770
+URxvt*color17:                        #ab7967
+URxvt*color18:                        #343d46
+URxvt*color19:                        #4f5b66
+URxvt*color20:                        #a7adba
+URxvt*color21:                        #dfe1e8
+
