@@ -1,21 +1,21 @@
 Setup
-git init --bare $HOME/.my-dotfiles
-mydotfiles remote add origin git@github.com:Siilwyn/my-dotfiles.git
+git init --bare $HOME/.dotfiles
+dotfiles remote add origin git@github.com:M4nk1n1/dotfiles.git
 
 
 Configuration
-alias mydotfiles='git --git-dir=$HOME/.my-dotfiles/ --work-tree=$HOME'
-mydotfiles config status.showUntrackedFiles no
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dotfiles config status.showUntrackedFiles no
 
 
 Usage
-mydotfiles status
-mydotfiles add .gitconfig
-mydotfiles commit -m 'Add gitconfig'
-mydotfiles push
+dotfiles status
+dotfiles add .gitconfig
+dotfiles commit -m 'Add gitconfig'
+dotfiles push
 
 
 Replication
-git clone --separate-git-dir=$HOME/.my-dotfiles https://github.com/Siilwyn/my-dotfiles.git my-dotfiles-tmp
+git clone --separate-git-dir=$HOME/.dotfiles https://github.com/M4nk1n1/dotfiles.git my-dotfiles-tmp
 rsync --recursive --verbose --exclude '.git' my-dotfiles-tmp/ $HOME/
 rm --recursive my-dotfiles-tmp
