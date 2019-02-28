@@ -1,3 +1,5 @@
+https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
+
 Setup
 git init --bare $HOME/.dotfiles
 dotfiles remote add origin git@github.com:M4nk1n1/dotfiles.git
