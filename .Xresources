@@ -1,8 +1,9 @@
+URxvt.font: xft:dejavusansmono:size=16
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
-URxvt.font: xft:dejavusansmono:size=16
 URxvt.scrollBar:False
 URxvt.letterSpace: -1
+
 ! Base16 Ocean
 ! Scheme: Chris Kempson (http://chriskempson.com)
 
