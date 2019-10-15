@@ -1,4 +1,4 @@
-URxvt.font: xft:dejavusansmono:size=16
+URxvt.font: xft:dejavusansmono:size=10
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 URxvt.scrollBar:False
