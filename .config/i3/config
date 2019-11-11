@@ -186,5 +186,5 @@ bar {
 }
 
 exec --no-startup-id xautolock -time 10 -locker 'i3lock -fei /home/mick/Pictures/Wallpapers/Lockscreen/lockscreen.png'
-exec --no-startup-id xrandr --output Virtual1 --primary --mode 2560x1600 --rotate normal
+exec --no-startup-id xrandr --output Virtual1 --primary --mode 3840x2160 --rotate normal
 exec_always --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
