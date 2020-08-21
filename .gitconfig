@@ -1,3 +1,5 @@
 [user]
 	name = Mick Campbell
 	email = mick@toolah.com
+[pull]
+	rebase = true
