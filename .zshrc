@@ -99,3 +99,7 @@ export LANG=en_AU.UTF-8
 eval $(keychain --eval --quiet id_rsa ~/.ssh/id_rsa)
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ll="ls -lh"
+export TERMINAL=/usr/bin/urxvt
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

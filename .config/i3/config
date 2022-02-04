@@ -86,7 +86,7 @@ set $workspace5 "5: VLC "
 set $workspace6 "6: Transmission"
 set $workspace7 "7: "
 set $workspace8 "8: KeePass"
-set $workspace9 "9: Spotify"
+set $workspace9 "9: Discord"
 set $workspace10 "10: Email"
 
 # switch to workspace
@@ -148,6 +148,9 @@ bindsym $mod+r mode "resize"
 bindsym $mod+shift+x exec i3lock -tfei ~/Pictures/Backgrounds/Lockscreen/lockscreen.png
 bindsym --release Print exec --no-startup-id import -window root -crop 1920x1080+1920+0 "/home/mick/Pictures/Screenshots/$(date +%F_%H%M%S).png"
 
+#Multiple Monitor Configuration
+exec --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 --pos left --rotate normal --output DP-0 --mode 1920x1080 --primary --rotate normal --pos right
+
 # Base16 Ocean by Chris Kempson (http://chriskempson.com)
 # template by Matt Parnell, @parnmatt
 
@@ -190,11 +193,12 @@ bar {
     }
 }
 
-bindsym $mod+Shift+p [instance="keepassxc"] scratchpad show, move position center
-for_window [instance="keepassxc"] floating enable, resize set 800 800, move scratchpad, border pixel 5
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+minus move scratchpad
 exec --no-startup-id xautolock -time 10 -locker 'i3lock -tfei ~/Pictures/Backgrounds/Lockscreen/lockscreen.png'
 exec_always --no-startup-id feh --randomize --bg-scale ~/Pictures/Backgrounds/*
-exec --no-startup-id xinput set-prop 13 287 1
-exec --no-startup-id xinput set-prop 13 295 1
+#exec_always --no-startup-id feh --bg-fill ~/Pictures/Backgrounds/temp.background.left.jpg --bg-fill ~/Pictures/Backgrounds/temp.background.centre.jpg --bg-fill ~/Pictures/Backgrounds/temp.background.right.jpg
+# xinput device numbers change when USB keyboard is attached
+# device 13 for no keyboard attached
+exec_always --no-startup-id xinput set-prop 13 288 1 #Tap to click
+exec_always --no-startup-id xinput set-prop 13 296 1 #Two finger scroll
