@@ -1,10 +1,4 @@
 terraform {
-  cloud {
-    organization = "<Threat Hunt>"
-    workspaces {
-      name = "Workspace1"
-    }
-  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
