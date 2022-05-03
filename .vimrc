@@ -17,9 +17,9 @@ set undofile
 set incsearch
 set grepprg=grep\ -nH\ $*
 
-let g:tex_flavor = "latex"
-
-set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+let g:tex_flavor = 'latex'
+let g:vimtex_view_method = 'zathura'
+let g:vimtex_quickfix_mode = 0
 
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -29,5 +29,6 @@ endif
 call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'
     Plug 'davidhalter/jedi-vim'
-    Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+    Plug 'lervag/vimtex'
 call plug#end()
+
