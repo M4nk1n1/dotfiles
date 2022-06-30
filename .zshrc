@@ -26,7 +26,7 @@ ZSH_THEME="bira"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-DISABLE_UPDATE_PROMPT="true"
+# DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=7
@@ -41,10 +41,10 @@ export UPDATE_ZSH_DAYS=7
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -100,6 +100,3 @@ eval $(keychain --eval --quiet id_rsa ~/.ssh/id_rsa)
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ll="ls -lh"
 export TERMINAL=/usr/bin/urxvt
-
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/bin/terraform terraform
